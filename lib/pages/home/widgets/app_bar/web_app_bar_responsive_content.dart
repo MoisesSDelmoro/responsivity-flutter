@@ -5,6 +5,43 @@ class WebAppBarResposiveContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> buttonsLearn(constraints) {
+      List<Widget> buttons = [];
+      if (constraints.maxWidth >= 450) {
+        buttons.addAll([
+          const SizedBox(
+            width: 8,
+          ),
+          OutlinedButton(
+            onPressed: () {},
+            child: const Text(
+              'Aprender',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ]);
+      }
+      if (constraints.maxWidth >= 550) {
+        buttons.addAll([
+          const SizedBox(
+            width: 8,
+          ),
+          OutlinedButton(
+            onPressed: () {},
+            child: const Text(
+              'Flutter',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ]);
+      }
+      return buttons;
+    }
+
     return Expanded(
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -13,7 +50,7 @@ class WebAppBarResposiveContent extends StatelessWidget {
               Expanded(
                 child: Container(
                   height: 45,
-                  width: 200,
+                  width: 250,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade100,
                     border: Border.all(
@@ -45,34 +82,7 @@ class WebAppBarResposiveContent extends StatelessWidget {
                   ),
                 ),
               ),
-              if (constraints.maxWidth >= 450) ...[
-                const SizedBox(
-                  width: 8,
-                ),
-                OutlinedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Aprender',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
-              if (constraints.maxWidth >= 550) ...[
-                const SizedBox(
-                  width: 8,
-                ),
-                OutlinedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Flutter',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
+              ...buttonsLearn(constraints),
             ],
           );
         },
