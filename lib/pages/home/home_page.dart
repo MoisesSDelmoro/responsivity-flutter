@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsividadeflutter/constants/constants.dart';
-import 'package:responsividadeflutter/pages/content/content.dart';
-import 'package:responsividadeflutter/pages/home/widgets/mobile_app_bar.dart';
-import 'package:responsividadeflutter/pages/home/widgets/web_app_bar.dart';
+import 'package:responsividadeflutter/pages/home/widgets/app_bar/mobile_app_bar.dart';
+import 'package:responsividadeflutter/pages/home/widgets/section/top_section.dart';
+import 'package:responsividadeflutter/pages/home/widgets/app_bar/web_app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -24,7 +24,17 @@ class HomePage extends StatelessWidget {
                   child: WebAppBar(),
                   preferredSize: Size(double.infinity, 72),
                 ),
-          body: const ContentPage(),
+          body: Align(
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1400),
+              child: ListView(
+                children: [
+                  TopSection(),
+                ],
+              ),
+            ),
+          ),
         );
       },
     );

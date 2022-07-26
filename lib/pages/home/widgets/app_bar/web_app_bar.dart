@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsividadeflutter/pages/home/widgets/web_app_bar_responsive_content.dart';
+import 'package:responsividadeflutter/pages/home/widgets/app_bar/web_app_bar_responsive_content.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar({Key? key}) : super(key: key);
