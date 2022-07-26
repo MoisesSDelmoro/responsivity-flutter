@@ -1,0 +1,1 @@
+const flutterAppMobileBreakpoints = 700;

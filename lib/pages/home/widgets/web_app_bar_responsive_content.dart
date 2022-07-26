@@ -22,8 +22,14 @@ class WebAppBarResposiveContent extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
+                      const SizedBox(
+                        width: 4,
+                      ),
                       IconButton(
-                        icon: const Icon(Icons.search),
+                        icon: const Icon(
+                          Icons.search,
+                        ),
+                        color: Colors.grey.shade500,
                         onPressed: () {},
                       ),
                       const Expanded(
@@ -31,6 +37,7 @@ class WebAppBarResposiveContent extends StatelessWidget {
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: 'Pesquise por algo aqui',
+                            isCollapsed: true,
                           ),
                         ),
                       ),
@@ -38,6 +45,34 @@ class WebAppBarResposiveContent extends StatelessWidget {
                   ),
                 ),
               ),
+              if (constraints.maxWidth >= 450) ...[
+                const SizedBox(
+                  width: 8,
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Aprender',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
+              if (constraints.maxWidth >= 550) ...[
+                const SizedBox(
+                  width: 8,
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Flutter',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ],
           );
         },

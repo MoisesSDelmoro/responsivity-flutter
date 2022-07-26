@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsividadeflutter/constants/constants.dart';
 import 'package:responsividadeflutter/pages/home/widgets/mobile_app_bar.dart';
 import 'package:responsividadeflutter/pages/home/widgets/web_app_bar.dart';
 
@@ -10,8 +11,10 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
-          drawer: const Drawer(),
-          appBar: constraints.maxWidth < 800
+          drawer: constraints.maxWidth < flutterAppMobileBreakpoints
+              ? const Drawer()
+              : null,
+          appBar: constraints.maxWidth < flutterAppMobileBreakpoints
               ? const PreferredSize(
                   child: MobileAppBar(),
                   preferredSize: Size(double.infinity, 56),
