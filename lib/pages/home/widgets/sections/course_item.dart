@@ -10,7 +10,7 @@ class CourseItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(
-          "images/courses_udemy.jpg",
+          "assets/images/courses_udemy.jpg",
           fit: BoxFit.fitWidth,
         ),
         const SizedBox(

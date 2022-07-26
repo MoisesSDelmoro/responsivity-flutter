@@ -17,7 +17,7 @@ class TopSection extends StatelessWidget {
                 AspectRatio(
                   aspectRatio: 3.2,
                   child: Image.asset(
-                    "images/udemy.jpg",
+                    "assets/images/udemy.jpg",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -72,7 +72,7 @@ class TopSection extends StatelessWidget {
                   height: 250,
                   width: double.infinity,
                   child: Image.asset(
-                    "images/udemy.jpg",
+                    "assets/images/udemy.jpg",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -123,7 +123,7 @@ class TopSection extends StatelessWidget {
             AspectRatio(
               aspectRatio: 3.4,
               child: Image.asset(
-                "images/udemy.jpg",
+                "assets/images/udemy.jpg",
                 fit: BoxFit.cover,
               ),
             ),

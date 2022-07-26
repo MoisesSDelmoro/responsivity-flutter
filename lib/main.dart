@@ -1,8 +1,14 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsividadeflutter/pages/home/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      builder: (_) => const MyApp(),
+      // enabled: true,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
