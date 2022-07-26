@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsividadeflutter/constants/constants.dart';
-import 'package:responsividadeflutter/pages/home/widgets/section/custom_search_field.dart';
+import 'package:responsividadeflutter/pages/home/widgets/sections/custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class TopSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth >= 1200) {
+        if (constraints.maxWidth >= flutterAppTabletBreakpoints) {
           return AspectRatio(
             aspectRatio: 3.2,
             child: Stack(
