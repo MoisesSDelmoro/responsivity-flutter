@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsividadeflutter/pages/home/widgets/app_bar_mobile.dart';
+import 'package:responsividadeflutter/pages/home/widgets/mobile_app_bar.dart';
+import 'package:responsividadeflutter/pages/home/widgets/web_app_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,7 +16,10 @@ class HomePage extends StatelessWidget {
                   child: MobileAppBar(),
                   preferredSize: Size(double.infinity, 56),
                 )
-              : AppBar(),
+              : const PreferredSize(
+                  child: WebAppBar(),
+                  preferredSize: Size(double.infinity, 72),
+                ),
         );
       },
     );
