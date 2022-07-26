@@ -44,7 +44,7 @@ class TopSection extends StatelessWidget {
                             height: 8,
                           ),
                           Text(
-                            "Aprendendo Flutter no curso de Flutter para compreender melhor a responsidade no Flutter",
+                            "Projeto desenvolvido para aprender/adquirir/melhorar/compreender novos conceitos e dinâmica de responsidade dos widgets-componentes do Flutter",
                             style: TextStyle(
                               fontSize: 16,
                               color: Colors.white,
