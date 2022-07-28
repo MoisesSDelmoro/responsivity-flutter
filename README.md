@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/apm/l/vim-mode?color=blue)](http://badges.mit-license.org)
 
 # Portal de cursos online
-Projeto desenvolvido durante um curso da Udemy para compreender de forma prática como funciona e o comportamento de componentes responsivos do Flutter.
+Projeto desenvolvido durante um curso da [Udemy](https://www.udemy.com/) para compreender de forma prática como funciona e o comportamento de componentes responsivos do Flutter.
 
 ---
 
