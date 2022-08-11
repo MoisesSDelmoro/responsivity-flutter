@@ -21,7 +21,7 @@ Projeto desenvolvido durante um curso da [Udemy](https://www.udemy.com/) para co
 
 - :four: Para executar a aplicação ``` $ flutter run ``` e no terminal decida em qual plataforma será executado a aplicação.
   
-- :five: Para abrir o projeto na IDE VScode ``` $ cd . ```
+- :five: Para abrir o projeto na IDE VScode ``` $ code . ```
   
 
 ---
